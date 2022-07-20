@@ -1,3 +1,9 @@
+## 서버 wiki
+
+https://github.com/FitToMe/FTM-server/wiki
+
+<br>
+
 ## 업무 수행 과정
 
 1. 자기가 할 일 issue로 생성
