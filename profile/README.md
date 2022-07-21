@@ -17,6 +17,10 @@ https://github.com/FitToMe/FTM-server/wiki
 
 4. 작업이 완료되면 origin에 push하고 upstream main branch로 Pull Request 생성. 팀원들 reviewer 등록하기
 
+    > PR 이름으로는 브랜치명을 사용한다.
+    > 
+    > 기본적으로 PR 생성시 브랜치명이 이름으로 사용된다.
+
 5. 다른 사람들에게 확인 후 squash merge
 
     > squash merge를 함으로써 main 브랜치에 이슈별로 커밋이 하나씩 존재함으로써 가독성 개선
