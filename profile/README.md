@@ -8,16 +8,22 @@ https://github.com/FitToMe/FTM-server/wiki
 
 1. 자기가 할 일 issue로 생성
 
-2. 로컬 환경에서 `#issue번호` 포함해서 새로운 branch 생성
+2. 로컬 환경에서 `#issue번호`이랑 작업내용 포함해서 새로운 branch 생성
 
    * `feature/#001_login_ui`
-   * `fix/#001-change_login_ui`
+   * `fix/#001_change_login_ui`
 
 3. 로컬에서 작업하면서 커밋 (커밋 컨벤션 지키기)
 
-4. 작업이 완료되면 origin에 push하고 upstream main branch로 Pull Request 생성. 다른 사람들에게 확인 후 merge
+4. 작업이 완료되면 origin에 push하고 upstream main branch로 Pull Request 생성. 팀원들 reviewer 등록하기
 
-5. merge 후 브랜치 삭제
+5. 다른 사람들에게 확인 후 squash merge
+
+    > squash merge를 함으로써 main 브랜치에 이슈별로 커밋이 하나씩 존재함으로써 가독성 개선
+    >
+    > 만약 커밋을 좀 더 세세하게 확인하고 싶다면 제목에서 이슈나 PR 레퍼런스를 클릭해서 확인할 수 있다.
+
+6. 해당 브랜치 삭제
 
 ```
 골치아픈일이 생길 수 있기 때문에 가급적 main 브랜치에는 PR을 통해서만 merge하기.
@@ -35,7 +41,7 @@ https://github.com/FitToMe/FTM-server/wiki
 
 * ex) `feat: add tabling system`
 
-#### `type` 종류
+#### `prefix` 종류
 
 * feat : 새로운 기능에 대한 커밋
 * fix : 버그 수정에 대한 커밋
